@@ -25,7 +25,7 @@ description: 诊断原因未知的错误或异常行为. 适用于用户询问�
 
 性能问题阅读 `skill://debugging/references/performance.md`; 难以稳定复现的问题阅读 `skill://debugging/references/nondeterminism.md`
 
-在调查结束后, 先向用户报告发现, 并给出可能的修复方案.
+调查结束后, 先向用户报告发现和修复方案, 并遵循全局协作检查点. 不要在同一轮开始修复.
 
 ## 修复与验证
 
