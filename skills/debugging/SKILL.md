@@ -25,6 +25,8 @@ description: 诊断原因未知的错误或异常行为. 适用于用户询问�
 
 性能问题阅读 `skill://debugging/references/performance.md`; 难以稳定复现的问题阅读 `skill://debugging/references/nondeterminism.md`
 
+在调查结束后, 先向用户报告发现, 并给出可能的修复方案.
+
 ## 修复与验证
 
 实施最小而持久的修复, 处理已识别的故障机制和重要促成条件, 保持预期业务行为与关键约束. 将临时缓解, 永久修复和无关清理分开.
