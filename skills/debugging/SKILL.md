@@ -23,7 +23,7 @@ description: 诊断原因未知的错误或异常行为. 适用于用户询问�
 
 当证据已足以支持安全而持久的修复, 或继续调查的风险与成本高于预期信息价值时, 停止追因, 并记录剩余不确定性.
 
-性能问题阅读 `skill://debugging/references/performance.md`; 难以稳定复现的问题阅读 `skill://debugging/references/nondeterminism.md`
+性能问题使用 `read` 工具阅读 `skill://debugging/references/performance.md`; 难以稳定复现的问题使用 `read` 工具阅读 `skill://debugging/references/nondeterminism.md`
 
 调查结束后, 先向用户报告发现和修复方案, 并遵循全局协作检查点. 不要在同一轮开始修复.
 
