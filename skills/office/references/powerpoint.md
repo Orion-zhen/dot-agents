@@ -2,14 +2,14 @@
 
 ## 读取与定位
 
-- 用 `markitdown input.pptx -o extracted.md` 提取文字, 再按幻灯片边界读取所需范围.
+- 用 `uv run --no-project --with 'markitdown[pptx]' markitdown input.pptx -o extracted.md` 提取文字, 再按幻灯片边界读取所需范围.
 - 用 `python-pptx` 精确定位对象, 检查幻灯片顺序及形状标识, 名称, 类型, 文本和位置. 只输出目标幻灯片及相关对象.
 - 演讲者备注, 隐藏幻灯片和其他非可见内容单独检查.
 - 空间关系和版式按 [渲染流程](skill://office/references/rendering.md) 查看 PDF 页面, 并确认页码与源幻灯片的对应关系.
 
 ## 新建
 
-使用 PptxGenJS. 指定模板时按编辑流程处理.
+使用 PptxGenJS. 脚本用 `import pptxgen from "pptxgenjs"` 导入, 用 `bun run --install=force build.mjs` 执行. Bun 自动安装依赖并复用缓存, 不另行运行包安装命令. 指定模板时按编辑流程处理.
 
 - 添加幻灯片前确定画布尺寸, 字体和主题. 按用户要求和素材组织内容, 不强制套用固定商业风格.
 - 使用原生文本框, 表格和受支持的原生图表, 不将整页栅格化来规避布局问题.

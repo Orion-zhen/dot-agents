@@ -23,11 +23,12 @@ description: 读取, 创建, 编辑和转换 Word, Excel, PowerPoint 文件, 检
 
 - 版式检查, PDF 导出或旧格式转换: `skill://office/references/rendering.md`.
 - 格式参考中的库无法满足编辑或保留要求: `skill://office/references/ooxml.md`.
-- 执行因缺少依赖受阻: `skill://office/references/environment.md`.
 
 ## 执行
 
-直接使用现有环境, 不预先检查或调整依赖.
+默认 `uv`, `bun`, `pandoc`, `soffice` 和所需字体已就绪, 不预检或安装基础工具. 实际缺失时报告阻碍, 不尝试其他环境方案.
+
+Python 脚本统一用 `uv run --no-project --with 包名 python script.py`, 按本次导入的第三方包添加 `--with`. 仅用标准库时省略 `--with`. 包及缓存由 uv 管理, 不手动建虚拟环境或安装包.
 
 1. 按需提取内容或查看页面, 不为文字读取先渲染整个文件. 编辑前定位段落, 表格, 单元格或形状, 不能只凭页面图像定位.
 2. 内容来自用户要求和来源材料. 缺少关键事实时询问或明确留空. 模板填充后, 仅保留用户明确要求保留的占位项.
